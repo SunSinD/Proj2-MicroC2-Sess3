@@ -22,39 +22,25 @@
 
 Le but principal de ce projet est de développer un jeu au choix qui utilisera l’interface matrice. Contrairement aux projets habituels, vous choisirez quel jeu vous voulez développer et comment le faire en respectant les requis minimum. Avant de commencer à coder, vous devrez faire valider un document qui référencera au maximum les fonctionnalités de votre jeu. Ce document appelé Document de Conception Logicielle (DCL) ou Software Design Document (SDD). Dans le cas d’un jeu, nous parlons de Game Design Document (GDD). Un exemple de GDD est fourni sur Teams et vous pourrez vous en inspirer pour écrire le vôtre.
 
-<p align="right">(<a href="#readme-top"> Retour en Haut </a>)</p>
-
 
 
 ### Fait Avec
 
 * [![C++.io]][C++-url]
 
-<p align="right">(<a href="#readme-top"> Retour en Haut </a>)</p>
-
 ## Requis minimum
 
-Voici les requis minimums que votre programme devra avoir.
-•
-Écrire un GDD et le présenter à l’enseignant;
-•
-Utiliser la matrice à DEL;
-•
-Utiliser au moins un bouton-poussoir;
-•
-Utiliser l’encodeur en interruption;
-•
-Utiliser le potentiomètre;
-•
-Utiliser au moins une classe;
-•
-Utiliser au moins un compteur (timer) fonctionnant dans le mode de votre choix;
-•
-Utiliser la mémoire EEPROM;
-•
-Le jeu devra avoir un début (titre), un milieu (jeu) et une fin (game over / score);
-•
-Le jeu devra avoir au moins un code de triche;
+Voici les requis minimums que votre programme devra avoir. <br />
+• Écrire un GDD et le présenter à l’enseignant; <br />
+• Utiliser la matrice à DEL; <br />
+• Utiliser au moins un bouton-poussoir; <br />
+• Utiliser l’encodeur en interruption; <br />
+• Utiliser le potentiomètre; <br />
+• Utiliser au moins une classe; <br />
+• Utiliser au moins un compteur (timer) fonctionnant dans le mode de votre choix; <br />
+• Utiliser la mémoire EEPROM; <br />
+• Le jeu devra avoir un début (titre), un milieu (jeu) et une fin (game over / score); <br />
+• Le jeu devra avoir au moins un code de triche; <br />
 
 ### Game Design Document
 
@@ -71,13 +57,9 @@ Une présentation du jeu final devra être faite devant le professeur au dernier
 
 ### Remise du projet
 
-Pour la remise du projet, vous devez remettre votre code commenté à deux endroits différents :
-1.
-Teams : vous devez remettre l’ensemble des fichiers du projet compressé en fichier zip sur Teams, n’oubliez pas de remettre votre Game Design Document mis à jour avec votre projet;
-2.
-GitHub : vous devez ajouter le compte GitHub du professeur (gbeaulieuMontmo) au collaborateur autorisé de votre dépôt privé (private repositories). Voir le fichier VisualStudioCode_GitHub.pdf disponible dans le répertoire procédures des fichiers du cours pour plus d’information. Vous devrez également créer un Readme pour votre dépôt.
-
-<p align="right">(<a href="#readme-top"> Retour en Haut </a>)</p>
+Pour la remise du projet, vous devez remettre votre code commenté à deux endroits différents : <br />
+1. Teams : vous devez remettre l’ensemble des fichiers du projet compressé en fichier zip sur Teams, n’oubliez pas de remettre votre Game Design Document mis à jour avec votre projet; <br />
+2. GitHub : vous devez ajouter le compte GitHub du professeur (gbeaulieuMontmo) au collaborateur autorisé de votre dépôt privé (private repositories). Voir le fichier VisualStudioCode_GitHub.pdf disponible dans le répertoire procédures des fichiers du cours pour plus d’information. Vous devrez également créer un Readme pour votre dépôt. <br />
 
 
 ## License
