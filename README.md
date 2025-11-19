@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SunSinD/Projet1_Singh_Sunpreet?tab=readme-ov-file#readme-top">
-    <img src="https://i.imgur.com/Eqy6dM9.png" alt="Image" width="600" height="800">
+    <img src="INSERT IMAGE LINK WHEN YOU'VE FINISHED IT" alt="Image" width="600" height="800">
   </a>
 
   <h1 align="center">Projet 2</h1>
