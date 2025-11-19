@@ -8,10 +8,10 @@
     <img src="https://i.imgur.com/Eqy6dM9.png" alt="Image" width="600" height="800">
   </a>
 
-  <h3 align="center">Projet 1</h4>
+  <h3 align="center">Projet 2</h4>
 
   <p align="center">
-    de 10/28/2025 à 11/13/2025, Projet 1 pour 243-33A-MO : Microcontrôleur 2
+    de 11/18/2025 à 12/18/2025, Projet 2 pour 243-33A-MO : Microcontrôleur 2
     <br />
   </p>
 </div>
@@ -20,11 +20,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/montmorency.png)
 
-Le but principal de ce projet est de développer un programme qui servira d’outil de test unifié et portable pour tester l’ensemble de fonctionnalité de l’interface matrice. Cet outil servira aux techniciens du département pour deux fonctions critiques :
-1.
-Diagnostic de pannes pour la réparation : Le système doit permettre aux techniciens d'isoler rapidement les composants défectueux sur les cartes électroniques en réparation.
-2.
-Validation post-assemblage et contrôle qualité : Après l'assemblage d'un appareil, cet outil servira de banc d'essai rapide pour garantir que tous les composants fonctionnent selon les spécifications.
+Le but principal de ce projet est de développer un jeu au choix qui utilisera l’interface matrice. Contrairement aux projets habituels, vous choisirez quel jeu vous voulez développer et comment le faire en respectant les requis minimum. Avant de commencer à coder, vous devrez faire valider un document qui référencera au maximum les fonctionnalités de votre jeu. Ce document appelé Document de Conception Logicielle (DCL) ou Software Design Document (SDD). Dans le cas d’un jeu, nous parlons de Game Design Document (GDD). Un exemple de GDD est fourni sur Teams et vous pourrez vous en inspirer pour écrire le vôtre.
 
 <p align="right">(<a href="#readme-top"> Retour en Haut </a>)</p>
 
@@ -36,35 +32,48 @@ Validation post-assemblage et contrôle qualité : Après l'assemblage d'un appa
 
 <p align="right">(<a href="#readme-top"> Retour en Haut </a>)</p>
 
-## Tests à effectuer
+## Requis minimum
 
-Voici les différents tests qui devront être effectués pour s’assurer du bon fonctionnement de la matrice. Tous les détails non spécifiés dans le cahier de charge devront être décidés par le programmeur.
+Voici les requis minimums que votre programme devra avoir.
 •
-Test de la matrice à DEL : En parcourant les différents états fonctionnels (statique, animation, etc.), le technicien peut s'assurer que chaque pixel de la matrice est fonctionnel, que l'affichage est clair et qu’aucun problème n’est détecté dans la matrice;
+Écrire un GDD et le présenter à l’enseignant;
 •
-Test des entrées boutons : Les 7 boutons-poussoirs doivent valider la connectivité et la bonne lecture des entrées numériques. L’état de chaque bouton devra être affiché sur la matrice;
+Utiliser la matrice à DEL;
 •
-Le test du potentiomètre et la photocellule doivent valider les entrées analogiques, avec une confirmation visuelle sur la matrice en affichant la valeur numérique des composants;
+Utiliser au moins un bouton-poussoir;
 •
-L'encodeur doit confirmer la lecture des signaux en quadrature en affichant sa valeur sur la matrice de plus le bouton poussoir de l’encodeur doit être également testé;
+Utiliser l’encodeur en interruption;
 •
-Test des DELs RVB : L’allumage et le changement de couleur des DELs doit pouvoir être testé à l’aide d’appuie sur des boutons;
+Utiliser le potentiomètre;
 •
-Documentation de test : L'écran LCD agit comme une interface de retour d'information essentielle, fournissant des valeurs numériques brutes et des états (ex.: la valeur de l'ADC du potentiomètre) qui peuvent être vus par le technicien pour le contrôle qualité;
+Utiliser au moins une classe;
 •
-L’ensemble des états doivent, en plus d’être affichés sur la matrice, être transmis par le port série;
+Utiliser au moins un compteur (timer) fonctionnant dans le mode de votre choix;
 •
-Une combinaison de touche devra faire basculer la matrice en mode animation ou en mode affichage de l’état des entrées. Attention de bien spécifier la combinaison de touche dans les commentaires du programme.
+Utiliser la mémoire EEPROM;
+•
+Le jeu devra avoir un début (titre), un milieu (jeu) et une fin (game over / score);
+•
+Le jeu devra avoir au moins un code de triche;
+
+### Game Design Document
+
+Vous devez écrire un document qui présente votre jeu et les caractéristiques principales de celui-ci, voir l’exemple disponible sur Teams. Un brouillon de ce document devra être présenté au professeur au plus tard au début du deuxième laboratoire pour approbation. Cette approbation est obligatoire et permettra au professeur d’indiquer si le projet est suffisant ou trop ambitieux pour le cours. Une version finale du document sera remise à la fin du projet avec le code source pour évaluation.
+
+### Rencontre hebdomadaire avec l’enseignant
+
+Au début du laboratoire de chaque semaine, l’équipe devra rencontrer l’enseignant pour montrer les progrès faits sur le projet. L’enseignant utilisera ce moment pour guider l’équipe et juger du progrès fait. Une pénalité sera attribuée à l’équipe s’il y a eu un progrès insuffisant depuis la semaine précédente.
 
 ### Évaluation
 
 Chaque partie du projet sera évaluée sur sa fonctionnalité ET sur les respects des normes de programmation. Voir la grille d’évaluation disponible sur Teams.
+Une présentation du jeu final devra être faite devant le professeur au dernier laboratoire du projet (2 décembre) ou sur rendez-vous les 15, 16 ou 17 décembre 2025.
 
 ### Remise du projet
 
 Pour la remise du projet, vous devez remettre votre code commenté à deux endroits différents :
 1.
-Teams : vous devez remettre l’ensemble des fichiers du projet compressé en fichier zip sur Teams;
+Teams : vous devez remettre l’ensemble des fichiers du projet compressé en fichier zip sur Teams, n’oubliez pas de remettre votre Game Design Document mis à jour avec votre projet;
 2.
 GitHub : vous devez ajouter le compte GitHub du professeur (gbeaulieuMontmo) au collaborateur autorisé de votre dépôt privé (private repositories). Voir le fichier VisualStudioCode_GitHub.pdf disponible dans le répertoire procédures des fichiers du cours pour plus d’information. Vous devrez également créer un Readme pour votre dépôt.
 
