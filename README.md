@@ -8,7 +8,7 @@
     <img src="https://i.imgur.com/Eqy6dM9.png" alt="Image" width="600" height="800">
   </a>
 
-  <h3 align="center">Projet 2</h4>
+  <h3 align="center">Projet 2</h1>
 
   <p align="center">
     de 11/18/2025 à 12/18/2025, Projet 2 pour 243-33A-MO : Microcontrôleur 2
