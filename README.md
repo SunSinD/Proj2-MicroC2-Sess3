@@ -4,8 +4,8 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/SunSinD/Projet1_Singh_Sunpreet?tab=readme-ov-file#readme-top">
-    <img src="INSERT IMAGE LINK WHEN YOU'VE FINISHED IT" alt="Image" width="600" height="800">
+  <a href="https://github.com/SunSinD/Projet2_Singh_Sunpreet">
+    <img src="https://www.discountrubberstamps.com/cdn/shop/products/500345.png?v=1591127501&width=1946" alt="Image" width="600" height="800">
   </a>
 
   <h1 align="center">Projet 2</h1>
