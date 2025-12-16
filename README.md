@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SunSinD/Projet2_Singh_Sunpreet">
-    <img src="https://i.imgur.com/2rBe5qx.png" alt="Image" width="600" height="800">
+    <img src="https://i.imgur.com/2rBe5qx.png" alt="Image" width="500" height="800">
   </a>
 
   <h1 align="center">Projet 2</h1>
