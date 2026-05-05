@@ -1,65 +1,96 @@
-# Proj2 MicroC2 Sess3 - LED Matrix Target Game
+<a id="readme-top"></a>
 
-This repository contains my second school project for **243-33A-MO: Microcontroleur 2**. It is a small arcade-style target game built with PlatformIO and Arduino for an Arduino Mega 2560 using a 64x32 RGB LED matrix.
+[![Licence Unlicense][license-shield]][license-url]
 
-The game uses the matrix as the screen, the push buttons as controls, the rotary encoder to choose the starting lives, the potentiometer for a cheat option, and EEPROM to save the high score.
+<br />
+<div align="center">
+  <img src="https://i.imgur.com/2rBe5qx.png" alt="Projet 2" width="500" height="800">
+
+  <h1 align="center">Projet 2 - Jeu sur matrice DEL</h1>
+
+  <p align="center">
+    Projet d'école pour le cours <strong>243-33A-MO : Microcontrôleur 2</strong><br />
+    Réalisé avec PlatformIO, Arduino et C++.
+  </p>
+</div>
+
+## Description
+
+![Collège Montmorency][product-screenshot]
+
+Ce dépôt contient mon deuxième projet pour le cours de Microcontrôleur 2. Le projet est un petit jeu de cible fait avec un Arduino Mega 2560 et une matrice RGB 64x32.
+
+Le joueur déplace un viseur avec les boutons et doit toucher les cibles avant qu'elles disparaissent. Le programme utilise aussi l'encodeur, le potentiomètre, un timer, les interruptions et la mémoire EEPROM.
 
 ## Gameplay
 
-- The title screen shows the selected lives and whether God Mode is enabled.
-- The player moves a crosshair with the directional buttons.
-- Button `B` shoots targets when the crosshair is over them.
-- Targets grow over time and eventually cost a life if they are not hit.
-- Button `A` ends the game immediately.
-- Button `C` starts a new game or returns to the title screen after game over.
-- The game saves the best score in EEPROM.
+- L'écran de départ montre le nombre de vies et l'état du God Mode.
+- Les boutons directionnels déplacent le viseur.
+- Le bouton `B` sert à tirer sur une cible.
+- Les cibles grossissent avec le temps.
+- Si une cible n'est pas touchée assez vite, le joueur perd une vie.
+- Le bouton `A` termine la partie.
+- Le bouton `C` démarre une partie ou retourne au menu après le game over.
+- Le meilleur score est sauvegardé dans l'EEPROM.
 
-## Features
+## Fonctionnalités
 
-- Title, gameplay, and game over states.
-- Moving crosshair controlled by push buttons.
-- Expanding target objects implemented with a `Ball` class.
-- Timer 3 compare interrupt setup.
-- Interrupt-based rotary encoder handling.
-- Potentiometer-controlled God Mode.
-- EEPROM high-score storage.
-- Local Game Design Document included as `Game_Design_Document.docx`.
+- Écran titre, jeu et écran game over.
+- Viseur contrôlé avec les boutons.
+- Cibles créées avec une classe `Ball`.
+- Lecture de l'encodeur avec une interruption.
+- Timer 3 configuré en interruption.
+- God Mode contrôlé avec le potentiomètre.
+- Sauvegarde du meilleur score avec l'EEPROM.
+- Document de conception inclus : `Game_Design_Document.docx`.
 
-## Hardware And Tools
+## Fait avec
 
+- [![C++][cpp-shield]][cpp-url]
 - Arduino Mega 2560
-- MOMO RGB Matrix / 64x32 RGB LED matrix
-- Push buttons, rotary encoder, potentiometer, and EEPROM
 - PlatformIO
-- Arduino framework
-- C++
+- Arduino Framework
+- MOMO RGB Matrix
 
-## Project Structure
+## Structure du projet
 
 ```text
 .
 |-- Game_Design_Document.docx
-|-- platformio.ini          # PlatformIO board and framework configuration
-|-- src/main.cpp            # Main game logic
-|-- include/bits_manip.h    # Bit manipulation helper declarations
-|-- lib/MOMO_RGB_Matrix/    # Local RGB matrix library
-|-- lib/bits_manip/         # Bit manipulation helper library
+|-- platformio.ini          # Configuration PlatformIO
+|-- src/main.cpp            # Code principal du jeu
+|-- include/bits_manip.h    # Déclarations des fonctions
+|-- lib/MOMO_RGB_Matrix/    # Librairie de la matrice RGB
+|-- lib/bits_manip/         # Fonctions pour manipuler les bits
 `-- README.md
 ```
 
-## Build And Upload
+## Compilation
 
-Install PlatformIO, connect the Arduino Mega 2560, then run:
+Pour compiler le projet avec PlatformIO :
 
 ```bash
 pio run
+```
+
+Pour téléverser le programme sur l'Arduino Mega 2560 :
+
+```bash
 pio run -t upload
 ```
 
-## Notes
+## Note
 
-This was created as a school project, so the code is focused on demonstrating the required microcontroller concepts: matrix drawing, button controls, interrupts, timer usage, classes, analog input, and EEPROM storage.
+Ce projet a été fait pour un travail scolaire. Le README a été écrit pour décrire mon dépôt et mon programme, au lieu de simplement copier le texte du document de l'enseignant.
 
-## License
+## Licence
 
-Released under the Unlicense. See [LICENSE.txt](LICENSE.txt) for details.
+Distribué sous licence Unlicense. Voir [LICENSE.txt](LICENSE.txt) pour plus d'informations.
+
+<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+[product-screenshot]: https://www.collegesinstitutes.ca/wp-content/uploads/2022/10/montmorency.png
+[cpp-shield]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white
+[cpp-url]: https://isocpp.org/
+[license-shield]: https://img.shields.io/github/license/SunSinD/Proj2-MicroC2-Sess3?style=for-the-badge
+[license-url]: LICENSE.txt
